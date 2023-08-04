@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --font-family-title: "Poppins", sans-serif;
+    --font-family-text: "Poppins";
+    --font-family-footer: Montserrat;
+
+    --font-size-extra-large: 9.65vw;
+    --font-size-large: 4.8vw;
+    --font-size-normal: 3.75vw;
+    --font-size-small: 2.75vw;
+
+    --font-weight: 400;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+
+    --bg-color: #FAFAFA;
+    --color: #000000;
+}
+
+body {
+    font-family: var(--font-family-title);
+    font-size: normal;
+    line-height: normal;
+    color: var(--color);
+}
+
+.container {
+    padding: 19px 24px;
+}
+
+.container__title {
+    font-family: serif;
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: -1.62px;
+    margin-top: 71px;
+    margin-bottom: 20px;
+}
+
+.container__subtitle {
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.container__paragraph {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: normal;
+    width: 333px;
+    height: 87px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    width: 100%;
+    max-width: 400px;
+    margin: 20px auto 80px;
+
+}
+
+.gallery__item:nth-child(even) {
+    margin-top: 50px;
+}
+
+.gallery__item {
+    width: 160.236px;
+    height: 234.467px;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.gallery__item:hover {
+    box-shadow: 0 0 10px black;
+}
+
+.gallery__item-image {
+    width: 100%;
+    height: 100%;
+}
+
+.gallery__span {
+    text-transform: uppercase;
+    font-size: 10px;
+    display: block;
+    position: absolute;
+    top: 18%;
+    left: 75%;
+    transform: rotate(90deg);
+    width: 100px;
+
+}
+
+.footer {
+    margin-top: 100px;
+    color: #A9A9A9;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+@media(min-width:600px) {
+
+    .container {
+        width: 80%;
+        max-width: 900px;
+        margin: auto;
+    }
+
+    .container__article {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .container__section {
+        font-size: 18px;
+    }
+
+    .container__title {
+        font-size: 36px;
+        margin-top: 0;
+    }
+
+    .gallery {
+        max-width: 900px;
+        gap: 100px;
+        margin: auto;
+    }
+
+    .gallery__item {
+        width: 200px;
+        height: 300px;
+    }
+
+    .gallery__span {
+        top: 15%;
+        left: 80%;
+    }
+
+    .gallery__item {
+        margin-bottom: 0;
+    }
+
+    .gallery__item:nth-child(5) {
+        margin-top: 100px;
+    }
+
+}
